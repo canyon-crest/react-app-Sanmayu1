@@ -13,7 +13,7 @@ createRoot(document.getElementById('root')).render(
    <Card name="Grapes" description= "they are Green grapes" />
    <Card name="Pears" description= "they are Pears" />
    {/* <Footer /> */}
-    <App />
+    {/* <App /> */}
     <Footer />
   </StrictMode>,
 )
