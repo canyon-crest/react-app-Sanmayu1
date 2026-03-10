@@ -1,7 +1,9 @@
 .card{
-    color: rgb(232, 0, 249);
-    border: 1cap;
-    border-radius: 2cqb;
-    border-width: 2;
+    
+    border-width: 2px;
+    border-style: dashed;
+    border-color: blue;
+    
+      
 
 }

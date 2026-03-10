@@ -9,9 +9,9 @@ import Footer from './footer.jsx'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <Nav />
-   <Card name="apples" description= "they are apples" />
-   <Card name="Grapes" description= "they are Green grapes" />
-   <Card name="Pears" description= "they are Pears" />
+   <Card name="number of students listening to music" description= " This allows you to change the number of students in class" />
+   <Card name="number of students doing homework" description= "This allows you to change the number of students doing their homework" />
+   <Card name="number of students talking" description= "This allows you to change the number of students talking" />
    {/* <Footer /> */}
     {/* <App /> */}
     <Footer />

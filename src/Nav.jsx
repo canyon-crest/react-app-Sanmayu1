@@ -6,8 +6,8 @@ function Nav(){
         
         <nav>
             <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
+                <li><a href="index.jsx">Home</a></li>
+                <li><a href="about.jsx">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
@@ -16,4 +16,6 @@ function Nav(){
     )
 }
 export default Nav
+
+
 

@@ -12,7 +12,7 @@ function Card({name, description}){
 <div className="card">
     <h2> {name} </h2>
     <p> Description: {description}</p>
-    <button onClick={() => setCount(count+1) }> Add {name} to cart</button>
+    <button onClick={() => setCount(count+1) }> Add {name}</button>
    <button onClick={() => setCount(0)}>Reset</button>
     <p>Total  {name}: {count}</p>
 </div>
