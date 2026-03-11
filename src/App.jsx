@@ -2,37 +2,33 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+// import Contact from './contact.jsx'
+import Nav from './Nav.jsx'
+import Card from './Card.jsx'
+import Footer from './Footer.jsx'
+import Home from './home.jsx'
+import Contact from './contact.jsx'
+import About from './about.jsx'
+
 
 function App() {
-  const [count, setCount] = useState(9)
+  const [page, setPage] = useState("about");
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 111111)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-     
-      
-    </>
+    <Nav setPage={setPage}/>
+    {page === "home" && <Home />}
+    {page ==="about" && <About/>}
+    {page === "contact" && <Contact />}
     
+    <Card />
+    <Footer />
+    
+    
+    </>
   )
+
 }
 
 export default App
+ 

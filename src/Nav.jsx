@@ -1,14 +1,14 @@
 import './Nav.css'
 
 
-function Nav(){
+function Nav({setPage}){
     return(
         
         <nav>
             <ul class="nav-links">
-                <li><a href="index.jsx">Home</a></li>
-                <li><a href="about.jsx">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li onClick ={() => setPage("home")}>Home</li>
+                <li onClick ={() => setPage("about")}>About</li>
+                <li onClick ={() => setPage("contact")}>Contact</li>
             </ul>
         </nav>
     
