@@ -1,0 +1,36 @@
+.cards-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.card {
+  border: 2px dashed #00bfff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  background-color: #1a1a1a;
+  color: #fff;
+  min-width: 250px;
+  max-width: 300px;
+  text-align: center;
+}
+
+.card-buttons {
+  margin-top: 1rem;
+}
+
+.card-buttons button {
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  background-color: #242424;
+  color: #ff64b7;
+  cursor: pointer;
+}
+
+.card-buttons button:hover {
+  background-color: #ff00f2;
+  color: #fff;
+}

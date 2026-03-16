@@ -1,0 +1,40 @@
+
+nav {
+    background-color: #fe00f6;
+    padding: 1rem 0;
+  }
+  
+  .nav-links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links li {
+    margin: 0 2rem;
+    cursor: pointer;
+    font-weight: bold;
+    color: #fff;
+    transition: color 0.3s;
+  }
+  
+  .nav-links li:hover,
+  .nav-links li.active {
+    color: #00bfff;
+  }
+
+  nav {
+    width: 100%;
+  }
+  
+  .nav-links {
+    display: flex;
+    justify-content: center;  /* centers menu horizontally */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  

@@ -1,34 +1,30 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
-// import Contact from './contact.jsx'
-import Nav from './Nav.jsx'
-import Card from './Card.jsx'
-import Footer from './Footer.jsx'
-import Home from './home.jsx'
-import Contact from './contact.jsx'
-import About from './about.jsx'
-
+import Nav from './components/Nav.jsx'
+import Card from './components/Card.jsx'
+import Footer from './components/Footer.jsx'
+import Home from './components/Home.jsx'
+import Contact from './components/Contact.jsx'
+import About from './components/About.jsx'
 
 function App() {
-  const [page, setPage] = useState("about");
+const [page, setPage] = useState("home");
 
-  return (
-    <>
-    <Nav setPage={setPage}/>
-    {page === "home" && <Home />}
-    {page ==="about" && <About/>}
-    {page === "contact" && <Contact />}
-    
-    <Card />
-    <Footer />
-    
-    
-    </>
-  )
+return (
+<div className="app-container">
+<Nav setPage={setPage} page={page} />
 
+<main className="main-content">
+{page === "home" && <Home />}
+{page === "about" && <About />}
+{page === "contact" && <Contact />}
+</main>
+
+<Footer />
+</div>
+)
 }
 
 export default App
+
  
