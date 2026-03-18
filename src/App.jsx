@@ -6,7 +6,7 @@ import Footer from './components/Footer.jsx'
 import Home from './components/Home.jsx'
 import Contact from './components/Contact.jsx'
 import About from './components/About.jsx'
-
+import GoogleLogin from './components/GoogleLogin.jsx'
 function App() {
 const [page, setPage] = useState("home");
 
